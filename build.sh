@@ -50,86 +50,11 @@ cd ..
 
 echo "Language"
 echo "1. Simplified Chinese"
-echo "2. Traditional Chinese"
-echo "3. English (United States)"
-echo "4. Turkish"
-echo "5. German"
-echo "6. Vietnamese"
-echo "7. Russian"
-echo "8. Hebrew"
-echo "9. Spanish"
-echo "10. Polish"
-echo "11. Ukrainian"
-echo "12. French"
-echo "13. Danish"
-echo "14. Portuguese (Brazil)"
-echo "15. Arabic"
-echo "16. Korean"
-echo "17. Hungarian"
+echo "2. English (United States)"
 read -p "Please make a choice: " choice
 case "$choice" in
     2)
-        echo "zh_TW"
-        cp lang/zh_TW/lang.sh build/boot/grubfm/
-        ;;
-    3)
         echo "en_US"
-        ;;
-    4)
-        echo "tr_TR"
-        cp lang/tr_TR/lang.sh build/boot/grubfm/
-        ;;
-    5)
-        echo "de_DE"
-        cp lang/de_DE/lang.sh build/boot/grubfm/
-        ;;
-    6)
-        echo "vi_VN"
-        cp lang/vi_VN/lang.sh build/boot/grubfm/
-        ;;
-    7)
-        echo "ru_RU"
-        cp lang/ru_RU/lang.sh build/boot/grubfm/
-        ;;
-    8)
-        echo "he_IL"
-        cp lang/he_IL/lang.sh build/boot/grubfm/
-        ;;
-    9)
-        echo "es_ES"
-        cp lang/es_ES/lang.sh build/boot/grubfm/
-        ;;
-    10)
-        echo "pl_PL"
-        cp lang/pl_PL/lang.sh build/boot/grubfm/
-        ;;
-    11)
-        echo "uk_UA"
-        cp lang/uk_UA/lang.sh build/boot/grubfm/
-        ;;
-    12)
-        echo "fr_FR"
-        cp lang/fr_FR/lang.sh build/boot/grubfm/
-        ;;
-    13)
-        echo "da_DK"
-        cp lang/da_DK/lang.sh build/boot/grubfm/
-        ;;
-    14)
-        echo "pt_BR"
-        cp lang/pt_BR/lang.sh build/boot/grubfm/
-        ;;
-    15)
-        echo "ar_SA"
-        cp lang/ar_SA/lang.sh build/boot/grubfm/
-        ;;
-    16)
-        echo "ko_KR"
-        cp lang/ko_KR/lang.sh build/boot/grubfm/
-        ;;
-    17)
-        echo "hu_HU"
-        cp lang/hu_HU/lang.sh build/boot/grubfm/
         ;;
     *)
         echo "zh_CN"

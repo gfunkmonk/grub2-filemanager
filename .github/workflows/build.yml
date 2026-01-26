@@ -1,9 +1,7 @@
 name: release
 
 on:
-  push:
-    branches:
-      - master
+  workflow_dispatch:
 
 jobs:
   build:
@@ -32,20 +30,5 @@ jobs:
         title: "Development Build"
         files: |
           grubfm-zh_CN.7z
-          grubfm-zh_TW.7z
           grubfm-en_US.7z
-          grubfm-ar_SA.7z
-          grubfm-da_DK.7z
-          grubfm-de_DE.7z
-          grubfm-es_ES.7z
-          grubfm-fr_FR.7z
-          grubfm-he_IL.7z
-          grubfm-hu_HU.7z
-          grubfm-ko_KR.7z
-          grubfm-pl_PL.7z
-          grubfm-pt_BR.7z
-          grubfm-ru_RU.7z
-          grubfm-tr_TR.7z
-          grubfm-uk_UA.7z
-          grubfm-vi_VN.7z
           grubfm_multiarch.iso
