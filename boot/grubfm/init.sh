@@ -46,7 +46,7 @@ then
     export grub_secureboot=$"Disabled";
   fi;
   # enable mouse/touchpad
-  # terminal_input --append mouse;
+  terminal_input --append mouse;
 else
   search -s -f -q /fmldr;
 fi;
