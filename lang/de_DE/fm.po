@@ -378,6 +378,9 @@ msgstr "Shim-Validierung deaktivieren und Neustart"
 msgid "Disable graphics mode (T)"
 msgstr "Grafikmodus deaktivieren (T)"
 
+msgid "Theme (H)"
+msgstr "Das Thema (H)"
+
 msgid "Encoding: "
 msgstr "Verschlüsselung: "
 

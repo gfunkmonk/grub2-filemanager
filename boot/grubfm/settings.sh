@@ -54,6 +54,10 @@ submenu $"Resolution (R): ${mode_current}" --class screen --hotkey "r" {
   done;
 }
 
+menuentry $"Theme (H)" --class png --hotkey "h" {
+  lua ${prefix}/themes.lua;
+}
+
 if [ "${grub_fs_case_sensitive}" != "1" ];
 then
   menuentry $"Enable case-sensitive filenames" --class strcase {

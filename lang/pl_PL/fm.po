@@ -378,6 +378,9 @@ msgstr "Wyłącz sprawdzanie poprawności i uruchom ponownie"
 msgid "Disable graphics mode (T)"
 msgstr "Wyłącz tryb graficzny (T)"
 
+msgid "Theme (H)"
+msgstr "Motyw (H)"
+
 msgid "Encoding: "
 msgstr "Kodowanie: "
 

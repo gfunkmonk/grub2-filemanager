@@ -68,7 +68,7 @@ export secondary_locale_dir=${prefix}/locale/fm;
 source ${prefix}/lang.sh;
 
 export grub_disable_esc="1";
-export gfxmode=1024x768;
+export gfxmode=1920x1080;
 export gfxpayload=keep;
 terminal_output gfxterm;
 export color_normal=white/black;
