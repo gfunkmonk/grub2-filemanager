@@ -1,0 +1,28 @@
+name: build-actions
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    if: github.event.repository.owner.id == github.event.sender.id
+
+    steps:
+      - name: checkout
+        uses: actions/checkout@v7
+
+      - name: initialize
+        run: sudo -E apt-get -y install gettext grub2-common genisoimage p7zip-full mtools xorriso
+
+      - name: update_grub2
+        run: ./update_grub2.sh
+
+      - name: build
+        run: ./build.sh && ls
+
+      - name: upload
+        uses: actions/upload-artifact@v7
+        with:
+          name: build-grubfm
+          path: ./grubfmx64.efi
